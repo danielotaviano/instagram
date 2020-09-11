@@ -18,5 +18,8 @@ export const Container = styled.div`
 
   span {
     font-size: 12px;
+    max-width: 64px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 `;

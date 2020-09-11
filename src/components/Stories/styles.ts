@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 
 interface ScrollProps {
-  leftPosition: number | undefined;
+  display: {
+    left: boolean;
+    right: boolean;
+  };
 }
 
 export const Container = styled.div`
@@ -40,9 +43,10 @@ export const Content = styled.div`
 `;
 
 export const ButtonNext = styled.div<ScrollProps>`
+  cursor: pointer;
   position: absolute;
   width: 45px;
-  display: flex;
+  display: ${({ display }) => (display.right ? 'flex' : 'none')};
   align-items: center;
   justify-content: center;
   right: 0;
@@ -57,9 +61,10 @@ export const ButtonNext = styled.div<ScrollProps>`
 `;
 
 export const ButtonPrev = styled.div<ScrollProps>`
+  cursor: pointer;
   position: absolute;
   width: 45px;
-  display: flex;
+  display: ${({ display }) => (display.left ? 'flex' : 'none')};
   align-items: center;
   justify-content: center;
   left: 0;
