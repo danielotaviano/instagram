@@ -1,16 +1,21 @@
 import React from 'react';
 
 import Header from '../../components/Header';
+import RightDiv from '../../components/RightDiv';
 import Stories from '../../components/Stories';
 
-import { MainContainer } from './styles';
+import { Content, MainContainer } from './styles';
 
 const Dashboard: React.FC = () => {
   return (
     <>
       <Header />
+
       <MainContainer>
-        <Stories />
+        <Content>
+          <Stories />
+        </Content>
+        <RightDiv />
       </MainContainer>
     </>
   );
