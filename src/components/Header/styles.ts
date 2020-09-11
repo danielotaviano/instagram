@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { shade } from 'polished';
 
 export const Container = styled.header`
   width: 100%;
@@ -8,6 +9,7 @@ export const Container = styled.header`
 `;
 
 export const Content = styled.div`
+  width: 100%;
   max-width: 935px;
   height: 100%;
   margin: 0 auto;
@@ -45,6 +47,10 @@ export const Center = styled.div`
     font-weight: 300;
     line-height: 18px;
   }
+
+  @media (max-width: 550px) {
+    display: none;
+  }
 `;
 
 export const RightSide = styled.div`
@@ -59,6 +65,13 @@ export const RightSide = styled.div`
     & + a {
       margin-left: 22px;
     }
+  }
+
+  div {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: ${({ theme }) => shade(0.2, theme.colors.primary)};
   }
 
   img {

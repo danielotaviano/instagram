@@ -16,7 +16,7 @@ export default createGlobalStyle`
   }
   body {
     background: ${({ theme }) => theme.colors.primary};
-    color: ${({ theme  }) => theme.colors.black};
+    color: ${({ theme }) => theme.colors.black};
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale;
@@ -37,7 +37,9 @@ export default createGlobalStyle`
   a {
     text-decoration: none;
     background: none;
-    font-weight: 700;
+    color:inherit;
+    font-size:inherit;
+    font-weight:inherit;
     cursor: pointer;
     border: 0;
     transition: 180ms ease-in-out;
