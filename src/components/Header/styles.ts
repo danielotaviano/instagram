@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { shade } from 'polished';
 
 export const Container = styled.header`
+  position: fixed;
+  z-index: 3;
   width: 100%;
   height: 54px;
   background: ${({ theme }) => theme.colors.secondary};

@@ -3,8 +3,9 @@ import React from 'react';
 import Header from '../../components/Header';
 import RightDiv from '../../components/RightDiv';
 import Stories from '../../components/Stories';
+import Feed from '../../components/Feed';
 
-import { Content, MainContainer } from './styles';
+import { Content, MainContainer, Feeds } from './styles';
 
 const Dashboard: React.FC = () => {
   return (
@@ -14,6 +15,10 @@ const Dashboard: React.FC = () => {
       <MainContainer>
         <Content>
           <Stories />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
         </Content>
         <RightDiv />
       </MainContainer>

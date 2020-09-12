@@ -1,19 +1,28 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  margin-left: ${-[614 / 2 - 500]}px;
   width: 100%;
+  max-width: 293px;
   height: auto;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 export const UserContent = styled.div`
   display: flex;
   align-items: center;
 
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 `;
 export const ImgContent = styled.div`
   img {

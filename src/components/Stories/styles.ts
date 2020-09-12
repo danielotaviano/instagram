@@ -11,6 +11,8 @@ export const Container = styled.div`
   position: relative;
   width: 100%;
   max-width: 614px;
+  margin-bottom: 24px;
+  margin-top: 50px;
 `;
 
 export const Content = styled.div`
@@ -25,6 +27,7 @@ export const Content = styled.div`
 
   white-space: nowrap;
   overflow-x: auto;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
   -ms-overflow-style: none;

@@ -80,7 +80,7 @@ const RightDiv: React.FC = () => {
           </ul>
         </nav>
 
-        <span>© 2020 Instagram do Facebook</span>
+        <span>© 2020 Instagram de Daniel (@danielotavs)</span>
       </Footer>
     </Container>
   );
